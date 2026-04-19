@@ -1,3 +1,13 @@
+const  myFunc4 = function(a,b,c){
+    const val1 = a * b - c;
+    return val1;
+}
+
+const a4 = myFunc4(4,6,2);
+const a5 = myFunc4(40,60,2);
+const a6 = myFunc4(50,2,25);
+console.log(a4,a5,a6);
+
 function myFun1(){
     console.log("Hello");
     console.log("Alex");
