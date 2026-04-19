@@ -22,7 +22,7 @@ const c = 7;
 // Function Expression
 const fun3 = (function(a,b,c) {
     const val = a * b * c;
-    console.log(val);
+    return val;
 })(a,b,c);  // IIFE
 console.log(fun3);
 
