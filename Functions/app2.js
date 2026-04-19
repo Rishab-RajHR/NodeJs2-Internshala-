@@ -19,6 +19,12 @@ const c = 7;
     console.log(val);
 })(a,b,c);  // IIFE
 
+// Function Expression
+const fun3 = (function(a,b,c) {
+    const val = a * b * c;
+    console.log(val);
+})(a,b,c);  // IIFE
+console.log(fun3);
 
 // Function Declaration is hoisted
 const val2 = fun2(8,2,4);
