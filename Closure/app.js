@@ -1,4 +1,5 @@
 function maker(val1){
+   // return (val2)=>{
     return function(val2){
         console.log(val1,val2);
         return val1 + val2;
