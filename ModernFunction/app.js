@@ -16,3 +16,17 @@ function loop(val){
 }
 
 loop(counter);
+
+
+// Another way
+function loop2(val){
+    console.log(val);
+    if(val > 0){
+       val = val-1;
+       loop2(val);
+    }
+    return 'end';
+}
+
+const looper = loop2(25);
+console.log(looper);
