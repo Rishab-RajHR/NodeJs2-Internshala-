@@ -23,7 +23,7 @@ function loop2(val){
     console.log(val);
     if(val > 0){
        val = val-1;
-       loop2(val);
+       return loop2(val);
     }
     return 'end';
 }
