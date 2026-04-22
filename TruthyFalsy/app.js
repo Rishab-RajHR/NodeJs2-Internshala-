@@ -22,6 +22,8 @@ function checkOutput(val){
     let checkNum = 10;
     if(val > checkNum){
         message = val + ' was larger than ' + checkNum;
+    }else if(val == checkNum){
+        message = val + ' Both are equal to ' + val;
     }else{
         message = val + ' was less than ' + checkNum;
     }
