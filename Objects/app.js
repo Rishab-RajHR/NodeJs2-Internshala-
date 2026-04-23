@@ -26,8 +26,9 @@ const myObj2 = {
     "first": "Alex",
      "last": "Pandian",
      "age": 40,
-     "test 1": "wow"
+     "test 1": "wow",
 }
 myObj2.last = "Singh";
+myObj2.newOne = "Test 1000";
 console.log(myObj2.last);
 console.log(myObj2);
