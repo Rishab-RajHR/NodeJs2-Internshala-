@@ -32,3 +32,9 @@ myObj2.last = "Singh";
 myObj2.newOne = "Test 1000";
 console.log(myObj2.last);
 console.log(myObj2);
+console.clear();
+
+const myObj3 = myObj2;
+myObj3.last = "Changed Last Name";
+console.log(myObj3);
+console.log(myObj2);
