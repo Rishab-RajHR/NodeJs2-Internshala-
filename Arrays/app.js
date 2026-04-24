@@ -7,4 +7,10 @@ console.log(typeof myObj);
 console.log(typeof myArray);
 
 const myArr1 = myArray;
-console.log(myArr1);
+
+myArr1[0] = 'Tested Okay';
+
+console.log(myArr1[0]);
+console.log(myArr1[1]);
+console.log(myArr1[2]);
+console.log(myArr1[3]);
