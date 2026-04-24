@@ -6,9 +6,17 @@ const myObj4 = {
        first : 'Tillu',
        last : 'Singh'
     },
-    fullName : function(){
-        return this.val3.first + ' ' + this.val3.last
+    val4 : {
+      first : 'Ram',
+      last : 'Singh'
+    },
+    fullName : function(val5){
+        console.log(this);
+        console.log(val5);
+        return this.val4.first + ' ' + this.val4.last
     }
 }
 
 // console.log(myObj4.val3.first + ' ' + myObj4.val3.last);
+
+console.log(myObj4.fullName('test'));
