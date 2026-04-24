@@ -5,3 +5,6 @@ console.log(myArray);
 console.log(myArray.length);
 console.log(typeof myObj);
 console.log(typeof myArray);
+
+const myArr1 = myArray;
+console.log(myArr1);
