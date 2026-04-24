@@ -1,4 +1,4 @@
-const myArray = ['test',10,true,{pne:'one',two:'two'}];
+const myArray = ['test',10,true,{one:'one',two:'two'}];
 const myObj = {one:'one',two:'two'};
 console.log(myArray);
 
