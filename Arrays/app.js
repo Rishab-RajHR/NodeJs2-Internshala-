@@ -14,3 +14,5 @@ console.log(myArr1[0]);
 console.log(myArr1[1]);
 console.log(myArr1[2]);
 console.log(myArr1[3]);
+
+console.log(myArray[3]['two']);
