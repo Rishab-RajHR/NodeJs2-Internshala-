@@ -9,6 +9,10 @@ for(let x=0; x<5; x++){
     const temp = 'Counter ' + x;
     myArr1.push(temp);
 }
+for(let x=0; x<5; x++)
+{ 
+    myArr1.pop();
+}
 console.clear();
 console.log(myArray)
 
