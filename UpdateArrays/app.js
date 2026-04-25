@@ -3,15 +3,16 @@ const myArray = ['test',10,true,{one:'one',two:'two'}];
 const myArr1 = myArray;
 
 myArr1[0] = 'Tested Okay';
-
+console.clear();
 for(let x=0; x<5; x++){
     // myArr1[myArray.length] = 'Counter ' + x;
     const temp = 'Counter ' + x;
     myArr1.push(temp);
 }
-for(let x=0; x<5; x++)
+for(let x=0; x<3; x++)
 { 
-    myArr1.pop();
+   const temp =  myArr1.pop();
+   console.log('REMOVED'+temp);
 }
 console.clear();
 console.log(myArray)
