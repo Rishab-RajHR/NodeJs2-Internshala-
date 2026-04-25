@@ -40,7 +40,7 @@ for(let x=3; x>0; x--)
 
 console.log(myArr1);
 // let tempArr = [];
-for(let x=0; x<5; x++){
+for(let x=5; x>0; x--){
     const temp = 'Value ' + x;
     // tempArr.push(temp);
     myArr1.splice(3,0,temp);
