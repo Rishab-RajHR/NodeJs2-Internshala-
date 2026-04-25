@@ -20,7 +20,7 @@ for(let x=0; x<5; x++){
 for(let x=0; x<3; x++)
 { 
    const temp =  myArr1.pop(); // remove from end with response.
-   console.log('REMOVED'+temp);
+   console.log('REMOVED '+temp);
 }
 
 for(let x=0; x<3; x++)
@@ -29,4 +29,11 @@ for(let x=0; x<3; x++)
    console.log('REMOVED from start '+temp);
 }
 
+for(let x=0; x<3; x++)
+{ 
+   const temp = 'Add ' + x;
+   myArr1.unshift(temp); // Add to the starting of the array
+}
+
+console.log(myArr1);
 
