@@ -39,13 +39,14 @@ for(let x=3; x>0; x--)
 // myArr1[100] = "100";
 
 console.log(myArr1);
-let tempArr = [];
+// let tempArr = [];
 for(let x=0; x<5; x++){
     const temp = 'Value ' + x;
-    tempArr.push(temp);
+    // tempArr.push(temp);
+    myArr1.splice(3,0,temp);
 }
-console.log(tempArr);
-myArr1.splice(3,2,temp);
+// console.log(tempArr);
+// myArr1.splice(3,2,tempArr);
 
 console.log(myArr1);
 
