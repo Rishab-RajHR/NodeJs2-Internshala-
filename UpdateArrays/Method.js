@@ -17,6 +17,9 @@ console.log(myArr1); // No Update
 
 // String Array
 const myArr2 = ['one','two','three'];
-val = myArr2.join();
+val = myArr2.join('|');
+
+// Concatenating the array
+val = myArr2.concat(myArr1);
 
 console.log(val);
