@@ -11,5 +11,12 @@ val = JSON.parse(val);
 
 val[0] = "UPDATED";
 
+console.log(val);   // Updated Ones
+console.log(myArr1); // No Update 
+
+
+// String Array
+const myArr2 = ['one','two','three'];
+val = myArr2.join();
+
 console.log(val);
-console.log(myArr1);
