@@ -6,4 +6,7 @@ val = myArr2.includes('two');
 // indexOf => Checks the index value
 val = myArr2.indexOf('three')
 
+// Check the object is Array or not
+val = Array.isArray(myArr2);
+
 console.log(val);
