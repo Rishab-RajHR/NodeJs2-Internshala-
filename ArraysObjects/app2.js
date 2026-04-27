@@ -24,3 +24,9 @@ console.log(Object.entries(myObj));
 Object.entries(myObj).forEach(([val,key])=>{
     console.log(val,key);
 })
+
+console.log(Object.keys(myObj));
+const myArr2 = (Object.values(myObj));
+myArr2.forEach((val,index,arr)=>{
+    console.log(val,index,arr);
+})
