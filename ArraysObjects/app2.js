@@ -5,3 +5,11 @@ const myObj = {
     city: "Tanjavur"
 }
 console.log(myArr.length);
+
+for(let i=0;i<myArr.length;i++){
+    console.log(myArr[i]);
+}
+
+myArr.forEach((val)=>{
+   console.log(val);
+})
