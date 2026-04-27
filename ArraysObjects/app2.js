@@ -18,3 +18,5 @@ myArr.forEach((val)=>{
 for ( key in myObj){
     console.log(key,myObj[key]);
 }
+
+console.log(Object.entries(myObj));
