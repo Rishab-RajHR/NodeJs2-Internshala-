@@ -13,3 +13,8 @@ for(let i=0;i<myArr.length;i++){
 myArr.forEach((val)=>{
    console.log(val);
 })
+
+// for-in loop
+for ( key in myObj){
+    console.log(key,myObj[key]);
+}
