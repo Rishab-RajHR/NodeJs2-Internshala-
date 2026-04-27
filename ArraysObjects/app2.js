@@ -20,3 +20,7 @@ for ( key in myObj){
 }
 
 console.log(Object.entries(myObj));
+
+Object.entries(myObj).forEach(([val,key])=>{
+    console.log(val,key);
+})
