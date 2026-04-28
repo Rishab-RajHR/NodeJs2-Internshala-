@@ -1,5 +1,5 @@
 // console.log(global);
-
+let counter = 0;
 console.log('first');
 
 setImmediate((val)=>{
@@ -14,7 +14,10 @@ for(let i=0; i<10; i++){
 
 function keepRunning(){
     counter++;
-    console.log('running');
+    if(counter>5){
+       clearInterval(int1);
+    }
+    console.log(`running ${counter}`);
 }
 
-setInterval(keepRunning, 1000);
+const int1 = setInterval(keepRunning, 1000);
