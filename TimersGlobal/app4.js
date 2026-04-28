@@ -25,3 +25,8 @@ const int1 = setInterval(keepRunning, 1000);
 const int2 = setTimeout(() => {
     console.log('5 second timeout');
 }, 5000);
+
+const int3 = setTimeout(() => {
+    console.log('3 second timeout');
+    clearTimeout(int2);
+}, 3000);
