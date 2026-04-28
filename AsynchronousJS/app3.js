@@ -11,7 +11,7 @@ function message(val){
 }
 
 for(let i=5; i>0; i--){
-    setTimeout(timer,i*1000,`${counter} Loop : ${i*1000}`);
+    setTimeout(()=>{message(`i=${i}`)},i*1000,`${counter} Loop : ${i*1000}`);
 }
 
 console.log('new val');
