@@ -1,6 +1,10 @@
 const pro1 = new Promise((resolve,reject)=>{
-    resolve('success');
-    reject('reject');
+    const temp = 10;
+    if(temp > 5){
+       resolve('success');
+    }else{
+        reject('reject');
+    }
 })
 
 pro1.then(
