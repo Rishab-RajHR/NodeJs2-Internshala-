@@ -5,8 +5,8 @@ const person3 = {first:"Tovino",last:"Singh"};
 friends.push(person1);
 friends.push(person2);
 friends.push(person3);
-friends.forEach((person)=>{
+friends.forEach((person,index)=>{
     // console.log(person);
-    console.log(person.first + " " + person.last);
+    console.log(index + ". " + person.first + " " + person.last);
 })
 // console.log(friends);
