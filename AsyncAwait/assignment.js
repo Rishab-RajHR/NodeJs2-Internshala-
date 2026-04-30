@@ -6,6 +6,7 @@ friends.push(person1);
 friends.push(person2);
 friends.push(person3);
 friends.forEach((person)=>{
-    console.log(person);
+    // console.log(person);
+    console.log(person.first + " " + person.last);
 })
 // console.log(friends);
