@@ -16,3 +16,7 @@ function output(mes){
 hello('Hello World').then((val)=>{
    console.log(val);
 })
+
+for(let i=0; i<5; i++){
+    output(`Loop ${i}`);
+}
