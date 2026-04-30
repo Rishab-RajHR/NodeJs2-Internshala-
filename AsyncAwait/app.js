@@ -3,9 +3,16 @@ let counter = 0;
 async function hello(mes){
     console.log(mes);
     counter++;
-    return mes + counter;
+    setTimeout(() => {
+         return mes + counter;
+    }, 2000);
 }
 
-hello().then((val)=>{
+function output(mes){
+    counter++;
+    console.log(`${mes} ${counter}`)
+}
+
+hello('Hello World').then((val)=>{
    console.log(val);
 })
