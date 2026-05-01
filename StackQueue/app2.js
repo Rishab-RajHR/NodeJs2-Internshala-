@@ -29,6 +29,9 @@ setTimeout(()=>{
 },2000)
 console.log('two');
 setTimeout(()=>{
-    console.log('four');
+    console.log('four and a half');
 },1000)
 console.log('three');
+setTimeout(()=>{
+   console.log('four');
+},0);
