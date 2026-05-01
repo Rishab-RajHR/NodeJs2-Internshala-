@@ -7,7 +7,7 @@ arr.forEach((el)=>{
 
 function aFun(myArr,callback){
    myArr.forEach((el)=>{
-      setTimeout(callback,1000);
+      setTimeout(callback,1000,el);
    })
 }
 
@@ -15,3 +15,5 @@ aFun(arr,(val)=>{
     console.log(val);
     console.log('async');
 })
+
+console.log('test');
