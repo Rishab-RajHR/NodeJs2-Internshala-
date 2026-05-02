@@ -10,7 +10,7 @@ function doubler(a,b){
 
 function output(a,b){
     console.log(a,b); // 1
-    const dub = double(a,b);
+    const dub = doubler(a,b);
     console.log(dub); // 4
 }
 
