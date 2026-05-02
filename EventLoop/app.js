@@ -19,8 +19,10 @@ const test2 = () => {
 
 const test3 = () => {
    console.log('three'); // 2
-   setTimeout(one,0);
-   two(); // 5
+   setTimeout(one,0); // 3 starts timer
+   two(); // 4
 }
 
-test2();
+test3(); // 1
+
+// Event loop give priority to call stack - only once the stack is completed and nothing is there then it checks the queue.
