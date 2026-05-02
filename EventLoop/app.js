@@ -11,10 +11,16 @@ console.clear();
 const one = ()=> console.log('one');
 const two = ()=> console.log('two');
 
-const test1 = () => {
-    console.log('three');
-    one();
-    two();
+const test2 = () => {
+    console.log('three'); // 2
+    one(); // 3
+    two(); // 5
 }
 
-test1();
+const test3 = () => {
+   console.log('three'); // 2
+   setTimeout(one,0);
+   two(); // 5
+}
+
+test2();
