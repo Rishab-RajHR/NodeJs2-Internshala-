@@ -1,15 +1,17 @@
 function adder(a,b){
-   console.log('adder');
+   console.log('adder'); // 3
    return a + b;
 }
 
 function doubler(a,b){
-   console.log('doubler');
+   console.log('doubler'); // 2
    return adder(a,b) * 2;
 }
 
 function output(a,b){
-    console.log(a,b);
+    console.log(a,b); // 1
     const dub = double(a,b);
-    console.log(dub);
+    console.log(dub); // 4
 }
+
+output(2,5);
