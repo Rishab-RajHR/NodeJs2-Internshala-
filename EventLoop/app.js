@@ -1,7 +1,9 @@
 // JS Single Thread
 function test1(){
-   return test1();
+   return test1();  // recursive function
 }
+
+
 console.log('one');
 // test1();
 console.log('two');
