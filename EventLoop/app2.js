@@ -38,3 +38,15 @@ const test3 = () => {
 test3(); // 1
 
 // Event loop give priority to call stack - only once the stack is completed and nothing is there then it checks the queue.
+
+console.clear();
+
+// IIFE Function
+
+(() => {
+    console.log('Run right away');
+})();
+
+setTimeout(()=>{
+    console.log('I can run after 1 second');
+},0);
