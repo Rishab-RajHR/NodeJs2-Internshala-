@@ -9,7 +9,6 @@ var test4 = function test5(i){
       test5(i+1);
    }
 }
-
 test4(0);
 
 console.log('one');
@@ -37,3 +36,15 @@ const test3 = () => {
 test3(); // 1
 
 // Event Loop give priority to call stack - only once the stack then it goes to the Queue.
+
+console.clear();
+
+// IIFE
+(()=>{
+   console.log('Run right away');
+})();
+
+// setTimeout
+setTimeout(()=>{
+    console.log("I ran after 1 second");
+},0);
