@@ -1,4 +1,4 @@
-let ready = true;
+let ready = false;
 
 const checker = new Promise((resolve,reject)=>{
   console.log(ready);
@@ -21,6 +21,7 @@ const check1 = () => {
        console.log(val);
    })
    .catch(err => {
+    console.log('error');
       console.log(err);
    })
 }
