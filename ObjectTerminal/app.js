@@ -12,6 +12,12 @@ rLine.question(`What is your name?`, name => {
 
 process.on('exit',(val)=>{
     console.log(`Process Exiting ${val}`);
+    console.log(val);
+})
+
+process.on('exit',(val)=>{
+    console.log(`Process Exiting ${val}`);
+    console.log(val);
 })
 
 console.log(`Last Message`);
