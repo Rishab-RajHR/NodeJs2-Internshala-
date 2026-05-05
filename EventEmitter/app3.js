@@ -12,8 +12,7 @@ const getParty = function (){
 
 eEmitter.on('music',getParty);
 
-
-// eEmitter.emit('music');
+eEmitter.emit('music');
 
 tester(2);
 
@@ -24,3 +23,9 @@ function tester(val){
    },val*1000);
   }
 }
+
+eEmitter.on('event',(a,b)=>{
+    console.log(a,b,this);
+})
+
+eEmitter.emit('event','a','b');
