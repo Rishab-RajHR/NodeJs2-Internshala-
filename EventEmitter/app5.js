@@ -36,6 +36,9 @@ eEmitter.on('event4', ()=>{
 })
 
 eEmitter.emit('event4');
+eEmitter.emit('event4');
+eEmitter.emit('event4');
+eEmitter.emit('event4');
 
 eEmitter.on('event1', (a,b)=>{
    setImmediate(()=>{
