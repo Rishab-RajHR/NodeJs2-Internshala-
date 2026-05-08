@@ -4,6 +4,6 @@ function tes1(){
 
 test1();
 
-const test1 = "hello";
+// const test1 = "hello";
 
 console.log(module);
