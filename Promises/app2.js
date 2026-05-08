@@ -7,6 +7,7 @@ const pro1 = new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve('Hello');
     }, 500);
+    
     /*if(temp > 5){
        resolve('success');
     }else{

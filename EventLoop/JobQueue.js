@@ -9,13 +9,13 @@ console.log('two');
 // Event loop checks the call stack -
 
 console.clear();
-const one = ()=> console.log('one');
-const two = ()=> console.log('two');
+const one = ()=> console.log('one'); // 4
+const two = ()=> console.log('two'); // 6
 
 const test2 = () => {
-     console.log('Three');
-     one();
-     two();
+     console.log('Three'); // 2
+     one(); // 3
+     two(); // 5
 }
 
-test2();
+test2(); // 1

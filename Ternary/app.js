@@ -23,6 +23,7 @@ counter-=2;
 console.log(checkOutput(counter));*/
 
 
+
 const age = 22;
 let message;
 
