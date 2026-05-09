@@ -6,5 +6,6 @@ console.log(output1('Hello'));
 
 console.log(output2);
 console.log(output2.output('TEST'));
-
+console.log(output2.val1);
+console.log(output2.val3);
 console.log(output2.val2);
