@@ -7,3 +7,5 @@ function output(message){
 }
 
 module.exports.output = output;
+module.exports.val1 = val1;
+exports.val3 = val3;
