@@ -1,6 +1,3 @@
-const output = function(message){
-    console.log(`This is your message ${message}`);
-    return message;
-}
+const output1 = require('./test3');
 
-module.exports = outputs;
+console.log(output1('Hello'));
