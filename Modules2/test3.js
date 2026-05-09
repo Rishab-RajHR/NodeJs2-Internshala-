@@ -3,4 +3,4 @@ const output = function(message){
     return message;
 }
 
-module.exports = outputs;
+module.exports = output;
