@@ -8,7 +8,7 @@ http.createServer((req,res)=>{
         res.write('Main landing page');
      }
      else if(req.url == '/test'){
-        req.write('Test page');
+        res.write('Test page');
      }
      else{
         res.write('Page not FOUND');
