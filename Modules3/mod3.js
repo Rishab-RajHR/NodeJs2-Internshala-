@@ -1,2 +1,5 @@
 const person = require('./test5');
-console.log(person);
+
+const friend1 = new person('Alex', 'Pandian');
+
+console.log(friend1);
