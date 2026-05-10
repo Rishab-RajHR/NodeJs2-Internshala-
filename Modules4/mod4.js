@@ -8,3 +8,5 @@ http.createServer((req,res)=>{
      res.write('World');
      res.end();
 }).listen(8080);
+
+console.log('Server Running...');
