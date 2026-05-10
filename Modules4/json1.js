@@ -1,4 +1,5 @@
-const output = {
+exports.output = {
     first: "Alex",
     last: "Pandian"
 }
+
