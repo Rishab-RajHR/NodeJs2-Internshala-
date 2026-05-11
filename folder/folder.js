@@ -1,4 +1,5 @@
 const fs = require('fs');
 const folderName = 'public';
 
-console.log(fs);
+fs.mkdirSync(folderName);
+console.log(fs.existsSync(folderName));
