@@ -1,5 +1,5 @@
 const fs = require('fs');
-const folderName = 'public2';
+const folderName = 'public3';
 console.error();
 try {
     if(!fs.existsSync(folderName)){
@@ -14,7 +14,7 @@ try {
 
 const folderPath = `./${folderName}`;
 
-fs.writeFile(folderPath+'/index.html','<h1>Hello World</h1>', (err) => {
+fs.writeFile(folderPath+'/index2.html','<h1>Hello World</h1>', (err) => {
     if(err) throw err;
     console.log('file created');
 })
