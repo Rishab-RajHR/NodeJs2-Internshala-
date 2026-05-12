@@ -19,7 +19,7 @@ fs.readdir(dir, (err,files3)=>{
 
 // overmyLog('test');
 myLog('test2');
-function overmyLog(val){
+function overmyLog(val){ // overwriting file /create
     const html =` - ${val}`;
     fs.writeFile(dir + '/log.html',html,(err)=>{
         if(err) throw err;
@@ -27,8 +27,8 @@ function overmyLog(val){
     })
 }
 
-function myLog(val){
-    const html = ` * ${val}`;
+function myLog(val){  // adding /create
+    const html = ` <br> * ${val}`;
     fs.appendFile(dir + '/log.html',html,(err)=>{
         if(err) throw err;
         console.log(`*Appended ${val}`);
