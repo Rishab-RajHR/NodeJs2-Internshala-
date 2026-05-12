@@ -17,11 +17,21 @@ fs.readdir(dir, (err,files3)=>{
 }
 }
 
+// overmyLog('test');
+myLog('test2');
 function overmyLog(val){
     const html =` - ${val}`;
     fs.writeFile(dir + '/log.html',html,(err)=>{
         if(err) throw err;
         console.log(`Updated writeFile ${val}`);
+    })
+}
+
+function myLog(val){
+    const html = ` * ${val}`;
+    fs.appendFile(dir + '/log.html',html,(err)=>{
+        if(err) throw err;
+        console.log(`*Appended ${val}`);
     })
 }
 
