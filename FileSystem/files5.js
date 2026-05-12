@@ -17,7 +17,15 @@ fs.readdir(dir, (err,files3)=>{
 }
 }
 
-delFile(dir + '/log.html');
+function removeAll(){
+    fs.readdir(dir, (err,files)=>{
+        files.forEach((myFile)=>{
+            console.log(myFile);
+        })
+    })
+}
+
+// delFile(dir + '/log.html');
 function delFile(val){
    fs.unlink(val,(err)=>{
       if(err) throw err;
