@@ -17,6 +17,7 @@ fs.readdir(dir, (err,files3)=>{
 }
 }
 
+removeAll()
 function removeAll(){
     fs.readdir(dir, (err,files)=>{
         files.forEach((myFile)=>{
@@ -29,7 +30,7 @@ function removeAll(){
 function delFile(val){
    fs.unlink(val,(err)=>{
       if(err) throw err;
-      console.log('File Deleted');
+      console.log(`File Deleted ${val}`);
    })
 }
 // myLog('test2');
