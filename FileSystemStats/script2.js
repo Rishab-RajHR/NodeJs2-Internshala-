@@ -33,4 +33,6 @@ function udpateFile(val){
 
 fs.stat(url,(err,stats)=>{
     console.log(stats.isFile());
+    console.log(stats.isDirectory());
+    console.log(stats.size);
 })
