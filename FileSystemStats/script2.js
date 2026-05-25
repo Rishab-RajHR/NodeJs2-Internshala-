@@ -16,3 +16,21 @@ http.createServer((req, res)=>{
      })
      console.log('Server running');
 }).listen(8080);
+
+const rs = fs.createReadStream(url);
+rs.on('open',(e)=>{
+    console.log('File is open');
+    let val = '<br>Opened';
+    updateFile(val);
+})
+
+function udpateFile(val){
+    fs.appendFile(url,val,(err)=>{
+       if(err) throw err;
+       console.log('Updated file');
+    })
+}
+
+fs.stat(url,(err,stats)=>{
+    console.log(stats.isFile());
+})
