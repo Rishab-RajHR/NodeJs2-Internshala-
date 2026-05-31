@@ -10,4 +10,5 @@ fs.readdir(dir, (err,files)=>{
     console.log(err);
     tempCounter = files.length + 1;
     newFileName = `new${tempCounter}.html`;
+    createNewFile(newFileName);
 })
