@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Tester</title>
+    </head>
+     <body>
+        <h1>Hello From the world of Express</h1>
+
+        <form action="/users" method="POST">
+             <input type="text" name="user" value="Alex">
+             <input type="text" name="id" value="100">
+             <button type="submit">Submit</button>
+        </form>
+        <button class="btn">Click</button>
+        <script>
+             const btn = document.querySelector('.btn');
+             const myId = document.querySelector('input[name="id"]')
+             btn.addEventListener('click',()=>{
+                 console.log('clicked');
+                 const endPoint  = '/users';
+                 const id = myId.value;
+                 fetch(endPoint+'/'+id,{
+                    method:'delete'
+                 }).then(res => res.json())
+                 .then(data => console.log(data));
+                 fetch(endPoint+'/'+id,{
+                    method:'put'
+                 }).then(res => res.json())
+                 .then(data => console.log(data));
+             })
+        </script>
+     </body>
+</html>
