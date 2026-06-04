@@ -2,7 +2,14 @@ const express = require('express');
 const app = express();
 const bodyparser = require('body-parser');
 const port = process.env.PORT || 8080;
+const myObj = require('./users')
+const logOutput = (req,res,next) =>{
+      console.log('Middleware in action');
+      console.log(req.params);
+      next();
+}
 
+app.use(logOutput);
 
 app.use(bodyparser.urlencoded({
   extended:true
@@ -18,22 +25,6 @@ app.post('/users', (req,res)=>{
     res.send(`DONE:User ${req.body.user} ID ${req.body.id}`);
 })
 
-const myObj = {
-  users: [
-    {
-      id: 1,
-      name: "Alx"
-    },
-    {
-      id: 2,
-      name: "John"
-    },
-    {
-      id: 3,
-      name: "Tovino"
-    }
-  ]
-};
 
 
 console.log(myObj);
@@ -45,6 +36,11 @@ app.get('/users/:id',(req,res)=>{
        myJson =  myObj.users.filter((ele)=>ele.id == 1)
    }
      res.json(myObj);
+})
+
+app.post('/users', (req,res) =>{
+     console.log(req.body);
+      res.sendFile(__dirname + '/index.html');
 })
 
 app.get('/users', (req, res) => {

@@ -29,11 +29,11 @@ app.get('/users/:id',(req,res)=>{
 app.delete('/users/:id',(req,res)=>{
     const id = req.params.id;
     console.log('deleted '+id);
-    res.send({status:'done',id:id});
+    res.send({status:'delete',id:id});
 })
 
 app.put('/users/:id',(req,res)=>{
     const id = req.params.id;
     console.log('Updated '+id);
-    res.send({status:'done',id:id});
+    res.send({status:'updated',id:id});
 })
