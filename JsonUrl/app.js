@@ -1,13 +1,27 @@
 const express = require('express');
 const app = express();
+const router = express.Router();
 const bodyparser = require('body-parser');
+const myObj = require('./users');
 const port = process.env.PORT || 8080;
-const myObj = require('./users')
-const logOutput = (req,res,next) =>{
-      console.log('Middleware in action');
-      console.log(req.params);
-      next();
-}
+const users = require('./user');
+
+
+app.use('/users',users);
+
+// app.route('/users')
+// .get((req,res) => res.send('Test GET'))
+// .post((req,res) => res.send('Test 2'))
+// .put((req,res) => res.send('Test 3'))
+
+// const myObj = require('./users')
+
+
+// const logOutput = (req,res,next) =>{
+//       console.log('Middleware in action');
+//       console.log(req.params);
+//       next();
+// }
 
 app.use(logOutput);
 
